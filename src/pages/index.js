@@ -26,7 +26,7 @@ export default class IndexPage extends React.Component {
         <section className="section">
         <div className="container">
           <h1 style={headerStyles}>Inaura Studios</h1>
-          <div style={descriptionStyles}>We craft custom fidelity prototypes for big digital ideas</div>
+          <div style={descriptionStyles}>We craft custom fidelity prototypes for big digital ideas.</div>
           <div style={detailsStyles}>
             <a href="mailto:info@inaurastudios.com">info@inaurastudios.com</a>
             <span> Located in Washington, DC </span></div>
