@@ -3,6 +3,10 @@ import PropTypes from 'prop-types'
 // import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
+// icons
+import Mail from '../img/if_008_Mail_183573.svg'
+import Location from '../img/if_location_1585851.svg'
+
 export default class IndexPage extends React.Component {
   render() {
     // const { data } = this.props
@@ -18,7 +22,25 @@ export default class IndexPage extends React.Component {
     }
 
     const detailsStyles = {
-      "fontSize" : "12px"
+      "fontSize" : "12px",
+    }
+
+    const iconStylesMail = {
+      "width" : "16px",
+      "margin" : "10px 10px 0 0",
+      "position" : "relative",
+      "top" : "5px",
+      "left" : "5px",
+      "opacity" : ".4"
+    }
+
+    const iconStylesLocation= {
+      "width" : "16px",
+      "margin" : "10px 3px 0 0",
+      "position" : "relative",
+      "top" : "5px",
+      "left" : "5px",
+      "opacity" : ".4"
     }
 
     return (
@@ -28,8 +50,8 @@ export default class IndexPage extends React.Component {
           <h1 style={headerStyles}>Inaura Studios</h1>
           <div style={descriptionStyles}>We craft custom fidelity prototypes for big digital ideas.</div>
           <div style={detailsStyles}>
-            <a href="mailto:info@inaurastudios.com">info@inaurastudios.com</a>
-            <span> Located in Washington, DC </span></div>
+            <img src={Mail} style={iconStylesMail}alt=""/><a href="mailto:info@inaurastudios.com">info@inaurastudios.com</a>
+            <img src={Location} style={iconStylesLocation}alt=""/><span> Located in Washington, DC </span></div>
           {/* <div className="container">
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
