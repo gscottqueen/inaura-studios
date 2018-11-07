@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Inaura Studios | Websites & Applications',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
