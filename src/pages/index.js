@@ -1,17 +1,36 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+// import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 export default class IndexPage extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    // const { data } = this.props
+    // const { edges: posts } = data.allMarkdownRemark
+
+    const headerStyles = {
+      "fontSize" : "45px",
+    }
+
+    const descriptionStyles = {
+      "fontSize" : "20px",
+      "lineHeight" : "2"
+    }
+
+    const detailsStyles = {
+      "fontSize" : "12px"
+    }
 
     return (
       <Layout>
         <section className="section">
-          <div className="container">
+        <div className="container">
+          <h1 style={headerStyles}>Inaura Studios</h1>
+          <div style={descriptionStyles}>We craft custom fidelity prototypes for big digital ideas</div>
+          <div style={detailsStyles}>
+            <a href="mailto:info@inaurastudios.com">info@inaurastudios.com</a>
+            <span> Located in Washington, DC </span></div>
+          {/* <div className="container">
             <div className="content">
               <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
             </div>
@@ -39,6 +58,7 @@ export default class IndexPage extends React.Component {
                   </p>
                 </div>
               ))}
+          </div> */}
           </div>
         </section>
       </Layout>
