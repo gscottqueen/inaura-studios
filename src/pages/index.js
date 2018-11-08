@@ -12,14 +12,6 @@ export default class IndexPage extends React.Component {
     // const { data } = this.props
     // const { edges: posts } = data.allMarkdownRemark
 
-    const headerStyles = {
-      "fontSize" : "45px",
-    }
-
-    const descriptionStyles = {
-      "fontSize" : "20px",
-      "lineHeight" : "2"
-    }
 
     const detailsStyles = {
       "fontSize" : "12px",
@@ -34,7 +26,7 @@ export default class IndexPage extends React.Component {
       "opacity" : ".4"
     }
 
-    const iconStylesLocation= {
+    const iconStylesLocation = {
       "width" : "16px",
       "margin" : "10px 3px 0 0",
       "position" : "relative",
@@ -43,46 +35,26 @@ export default class IndexPage extends React.Component {
       "opacity" : ".4"
     }
 
+    const blockAnchor = {
+      "width" : "250px",
+      "borderBottom" : "35px solid",
+      "margin" : "0 20%",
+      "paddingLeft" : "1.5rem"
+    }
+
     return (
       <Layout>
         <section className="section">
         <div className="container">
-          <h1 style={headerStyles}>Inaura Studios</h1>
-          <div style={descriptionStyles}>We craft custom fidelity prototypes for big digital ideas.</div>
+          <h1>Inaura<br></br> Studios</h1>
+          <h2>Your digital zen.</h2>
+          <div>We craft custom fidelity prototypes for big digital ideas.</div>
           <div style={detailsStyles}>
             <img src={Mail} style={iconStylesMail}alt=""/><a href="mailto:info@inaurastudios.com">info@inaurastudios.com</a>
             <img src={Location} style={iconStylesLocation}alt=""/><span> Located in Washington, DC </span></div>
-          {/* <div className="container">
-            <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
-            </div>
-            {posts
-              .map(({ node: post }) => (
-                <div
-                  className="content"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-                  key={post.id}
-                >
-                  <p>
-                    <Link className="has-text-primary" to={post.fields.slug}>
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
-                  </p>
-                  <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  </p>
-                </div>
-              ))}
-          </div> */}
           </div>
         </section>
+        <div style={blockAnchor}></div>
       </Layout>
     )
   }
