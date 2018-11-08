@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Inaura Studios | Websites & Applications',
+    title: 'Inaura Studios | Your Digital Zen',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
