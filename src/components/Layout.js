@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 
 // import Navbar from '../components/Navbar'
 import './all.sass'
+import '../fonts/fonts.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
