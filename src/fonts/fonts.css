@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'AlteHaasGroteskBold';
+  src: url('./AlteHaasGroteskBold.eot');
+  src: url('./AlteHaasGroteskBold.eot') format('embedded-opentype'),
+       url('./AlteHaasGroteskBold.woff2') format('woff2'),
+       url('./AlteHaasGroteskBold.woff') format('woff'),
+       url('./AlteHaasGroteskBold.ttf') format('truetype'),
+       url('./AlteHaasGroteskBold.svg#AlteHaasGroteskBold') format('svg');
+}
+
+@font-face {
+  font-family: 'AlteHaasGroteskRegular';
+  src: url('./AlteHaasGroteskRegular.eot');
+  src: url('./AlteHaasGroteskRegular.eot') format('embedded-opentype'),
+       url('./AlteHaasGroteskRegular.woff2') format('woff2'),
+       url('./AlteHaasGroteskRegular.woff') format('woff'),
+       url('./AlteHaasGroteskRegular.ttf') format('truetype'),
+       url('./AlteHaasGroteskRegular.svg#AlteHaasGroteskRegular') format('svg');
+}
+
+body h1 {
+  font-family: 'AlteHaasGroteskBold';
+  font-size: 144px;
+  line-height: .9;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+body h2 {
+  font-family: 'Avenir Next';
+  font-size: 36px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: 'AlteHaasGroteskRegular';
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+}
