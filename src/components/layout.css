@@ -1,0 +1,27 @@
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+main p {
+  margin-bottom: 55px;
+}
+
+.block-anchor {
+  width: 150px;
+  border-bottom: 25px solid;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  main {
+    margin-left: 20%;
+  }
+
+  .block-anchor {
+    width: 250px;
+    border-bottom: 35px solid;    
+  }
+
+}
