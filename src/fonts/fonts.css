@@ -18,24 +18,41 @@
        url('./AlteHaasGroteskRegular.svg#AlteHaasGroteskRegular') format('svg');
 }
 
-body h1 {
+body {
+  font-family: 'AlteHaasGroteskRegular';
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: normal;
+  color: #000000;
+}
+
+main h1 {
   font-family: 'AlteHaasGroteskBold';
-  font-size: 144px;
+  font-size: 85px;
   line-height: .9;
   color: #000000;
   margin-bottom: 40px;
 }
 
-body h2 {
+main h2 {
   font-family: 'Avenir Next';
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.4;
   margin-bottom: 20px;
+  font-weight: normal;
 }
 
-body {
-  font-family: 'AlteHaasGroteskRegular';
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000000;
+@media only screen and (min-width: 600px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  main h1 {
+    font-size: 144px;
+  }
+
+  main h2 {
+    font-size: 36px;
+  }
 }
