@@ -4,8 +4,8 @@ body {
 }
 
 main {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 10%;
+  max-width: 100%;
 }
 
 main p {
@@ -19,10 +19,6 @@ main p {
 
 
 @media only screen and (min-width: 600px) {
-
-  main {
-    margin-left: 20%;
-  }
 
   .block-anchor {
     width: 250px;
