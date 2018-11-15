@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import './section-preview.css'
 
 export const SectionTemplate = ({
   content,
@@ -10,6 +11,7 @@ export const SectionTemplate = ({
   description,
   title,
   subtitle,
+  order,
   helmet,
 }) => {
   const SectionContent = contentComponent || Content
@@ -20,11 +22,10 @@ export const SectionTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
+            <h1>{title}</h1>
             <h2>{subtitle}</h2>
             <p>{description}</p>
+            <p className="order">{order}</p>
             <SectionContent content={content} />
           </div>
         </div>
@@ -39,6 +40,7 @@ SectionTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   subtitle: PropTypes.string,
+  order: PropTypes.int,
   helmet: PropTypes.instanceOf(Helmet),
 }
 
@@ -48,6 +50,7 @@ const Section = ({ data }) => {
   return (
     <Layout>
       <SectionTemplate
+        order={post.order}
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
