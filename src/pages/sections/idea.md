@@ -11,5 +11,6 @@ description: >-
   skills to create these assets is specialized and wide ranging, which makes
   getting to that first round of investors extremely difficult without this
   conceptual stage.
+order: 2
 ---
 
