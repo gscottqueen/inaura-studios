@@ -7,5 +7,6 @@ description: >-
   aesthetic, and create lifestyle presence that people can connect with. We also
   want to explore your unique ideas that will shape the unique identity of the
   product and its features.
+order: 6
 ---
 
