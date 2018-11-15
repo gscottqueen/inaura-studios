@@ -1,7 +1,7 @@
 ---
 templateKey: section
-title: title
-subtitle: subtitle
-description: body
+title: Inaura Studios
+subtitle: Your Digital Zen
+description: We make custom fidelity prototypes for big digital ideas.
 ---
 
