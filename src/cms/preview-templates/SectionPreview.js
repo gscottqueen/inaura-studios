@@ -8,6 +8,7 @@ const SectionPreview = ({ entry, widgetFor }) => (
     description={entry.getIn(['data', 'description'])}
     subtitle={entry.getIn(['data', 'subtitle'])}
     title={entry.getIn(['data', 'title'])}
+    order={entry.getIn(['data', 'order'])}
   />
 )
 
