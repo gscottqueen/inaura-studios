@@ -7,5 +7,6 @@ description: >-
   actionable whiteboard workshop. Together we will try and enlighten ourselves
   to your concept and form a high-level understanding of the products market,
   users, and feasibility.
+order: 9
 ---
 
