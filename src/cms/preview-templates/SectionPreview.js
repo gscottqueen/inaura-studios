@@ -11,8 +11,6 @@ const SectionPreview = ({ entry, widgetFor }) => (
   />
 )
 
-console.log(post.frontmatter)
-
 SectionPreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
