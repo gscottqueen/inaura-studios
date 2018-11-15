@@ -1,0 +1,11 @@
+.order {
+  background: lightgrey;
+  font-size: 32px;
+  padding: 10px;
+  max-width: auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
