@@ -1,7 +1,7 @@
 ---
 templateKey: section
 title: title
-subtitle: sub
-description: desc
+subtitle: subtitle
+description: body
 ---
-body
+
