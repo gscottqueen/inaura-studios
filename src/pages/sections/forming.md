@@ -1,6 +1,6 @@
 ---
 templateKey: section
-title: Forming.
+title: Form.
 subtitle: Conceptual Identity.
 description: >-
   Products that work best help people solve problems, appeal to their design
