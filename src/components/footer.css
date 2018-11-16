@@ -4,7 +4,6 @@ footer {
 
 footer div {
   position: fixed;
-  background: white;
   bottom: 0;
   left: 0;
   display: flex;
@@ -16,6 +15,11 @@ footer div {
 footer p {
   font-size: 11px;
   margin: 20px 0 20px 10%;
+  background: white;
+}
+
+footer p + p {
+  margin: 20px 0 20px 20px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -24,14 +28,8 @@ footer p {
     margin: 0;
   }
 
-  footer div {
-    justify-content: flex-end;
-    width: 100%;
-  }
-
   footer p {
     font-size: 11px;
-    margin: 20px 20px 20px 10px;
   }
 
 }
