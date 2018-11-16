@@ -46,7 +46,6 @@ const buttonUp = {
   "cursor" : "pointer"
 }
 
-
 class IndexPage extends React.Component {
   constructor(props) {
     super(props);
@@ -57,27 +56,6 @@ class IndexPage extends React.Component {
     }
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  // handleScroll = () => {
-  //   let i = this.state.index
-    
-  //   if ( i < 10 ) {
-  //     this.setState(() => {
-  //       return {index: i + 1}
-  //     })
-  //   }
-
-  //   console.log(i)
-
-  // }
-
   incrementUp = () => {
     let i = this.state.index
     
@@ -86,11 +64,6 @@ class IndexPage extends React.Component {
         return {index: i + 1}
       })
     }
-
-    console.log(i)
-    console.log(this.state.posts.length)
-
-
   }
 
   incrementDown = () => {
@@ -101,9 +74,6 @@ class IndexPage extends React.Component {
         return {index: i - 1}
       })
     }
-
-    console.log(i)
-
   }
 
   render() {
@@ -120,7 +90,6 @@ class IndexPage extends React.Component {
             <Fade duration={2000} effect="fadeInUp" bottom><h2 className="sub-title">{this.state.posts[this.state.index].node.frontmatter.subtitle}</h2></Fade>
             <Fade duration={2000} effect="fadeInUp" bottom><p className="description">{this.state.posts[this.state.index].node.frontmatter.description}</p></Fade>
           </section>
-          {/* <Fade duration={3000} left><div className="block-anchor"></div></Fade> */}
           <button
           style={buttonUp}
           onClick={
