@@ -1,6 +1,8 @@
+html,
 body {
   margin: 0;
   overflow-x: hidden;
+  height: 100%;
 }
 
 main {
@@ -17,12 +19,23 @@ main {
   border-bottom: 25px solid;
 }
 
-
 @media only screen and (min-width: 600px) {
+
+  main {
+    max-width: 75%;
+  }
 
   .block-anchor {
     width: 250px;
     border-bottom: 35px solid;    
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+  main {
+    max-width: 60%;
   }
 
 }
