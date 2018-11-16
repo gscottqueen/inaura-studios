@@ -1,6 +1,6 @@
 ---
 templateKey: section
-title: Multiverse
+title: Multiverse.
 subtitle: Rapid Prototyping
 description: >-
   Using modern prototyping technology we can create a varying range of prototype
