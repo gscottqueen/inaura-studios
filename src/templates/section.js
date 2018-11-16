@@ -5,6 +5,8 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import './section-preview.css'
 
+
+
 export const SectionTemplate = ({
   content,
   contentComponent,
@@ -79,6 +81,7 @@ export const pageQuery = graphql`
         title
         subtitle
         description
+        order
       }
     }
   }
