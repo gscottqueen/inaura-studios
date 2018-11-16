@@ -1,6 +1,6 @@
 ---
 templateKey: section
-title: Destruction.
+title: Destruct.
 subtitle: User Research
 description: >-
   We believe that the best way to get to know you and your idea is to conduct an
