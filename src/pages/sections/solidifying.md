@@ -1,6 +1,6 @@
 ---
 templateKey: section
-title: Solidifying.
+title: Solidify.
 subtitle: Interface Desgin
 description: >-
   We believe that the best way to get to know you and your idea is to conduct an
