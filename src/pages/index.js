@@ -19,8 +19,8 @@ const buttonDown = {
   "padding" : "10px",
   "backgroundImage" : "url(" + arrowDown + ")",
   "backgroundRepeat" : "no-repeat",
-  "background-position-x" : "15px",
-  "background-position-y" : "center",
+  "backgroundPositionX" : "15px",
+  "backgroundPositionY" : "center",
   "backgroundSize" : "25px",
   "width" : "50px",
   "height" : "50px",
@@ -38,8 +38,8 @@ const buttonUp = {
   "padding" : "10px",
   "backgroundImage" : "url(" + arrowUp + ")",
   "backgroundRepeat" : "no-repeat",
-  "background-position-x" : "15px",
-  "background-position-y" : "center",
+  "backgroundPositionX" : "15px",
+  "backgroundPositionY" : "center",
   "backgroundSize" : "25px",
   "width" : "50px",
   "height" : "50px",
@@ -89,6 +89,7 @@ class IndexPage extends React.Component {
             <Fade duration={2000} effect="fadeInUp" bottom><h1 className="title">{this.state.posts[this.state.index].node.frontmatter.title}</h1></Fade>
             <Fade duration={2000} effect="fadeInUp" bottom><h2 className="sub-title">{this.state.posts[this.state.index].node.frontmatter.subtitle}</h2></Fade>
             <Fade duration={2000} effect="fadeInUp" bottom><p className="description">{this.state.posts[this.state.index].node.frontmatter.description}</p></Fade>
+            <Fade duration={2000} effect="fadeInUp" bottom><div className="Shiz" dangerouslySetInnerHTML={ {__html: this.state.posts[this.state.index].node.html} } /></Fade>
           </section>
           <button
           style={buttonUp}
@@ -136,6 +137,7 @@ query IndexQuery {
     edges {
       node {
         id
+        html
         frontmatter {
           templateKey
           title

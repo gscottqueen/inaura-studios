@@ -8,4 +8,3 @@ description: >-
   the creative effort is focused. 
 order: 12
 ---
-[Ready to get started?](inauarastudios.com/contact)
