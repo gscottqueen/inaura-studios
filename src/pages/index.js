@@ -7,7 +7,6 @@ import '../components/layout.css'
 import arrowUp from '../img/if_ic_keyboard_arrow_up_48px_352469.svg'
 import arrowDown from '../img/if_ic_keyboard_arrow_down_48px_352466.svg'
 
-
 const buttonDown = {
   "position" : "absolute", 
   "bottom" : "0", 
@@ -61,7 +60,9 @@ class IndexPage extends React.Component {
     
     if ( i < (this.state.posts.length - 1) ) {
       this.setState(() => {
-        return {index: i + 1}
+        return {
+          index: i + 1
+        }
       })
     }
   }
@@ -71,7 +72,9 @@ class IndexPage extends React.Component {
     
     if ( i > 0 ) {
       this.setState(() => {
-        return {index: i - 1}
+        return {
+          index: i - 1
+        }
       })
     }
   }
@@ -91,7 +94,7 @@ class IndexPage extends React.Component {
             <Fade duration={2000} effect="fadeInUp" bottom><p className="description">{this.state.posts[this.state.index].node.frontmatter.description}</p></Fade>
             <Fade duration={2000} effect="fadeInUp" bottom><div className="Shiz" dangerouslySetInnerHTML={ {__html: this.state.posts[this.state.index].node.html} } /></Fade>
           </section>
-          <button
+          {this.state.index > 0 && <button
           style={buttonUp}
           onClick={
           (event) => {
@@ -99,8 +102,9 @@ class IndexPage extends React.Component {
             event.stopPropagation()
             this.incrementDown()
             }
-          }/>
-          <button
+          }/>}
+          {this.state.index < (this.state.posts.length - 1) && <button
+          className="button-down"
           style={buttonDown}
           onClick={
           (event) => {
@@ -108,7 +112,7 @@ class IndexPage extends React.Component {
             event.stopPropagation()
             this.incrementUp()
             }
-          }/>
+          }/>}
     </Layout>
     )
   }
