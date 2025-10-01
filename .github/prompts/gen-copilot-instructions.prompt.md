@@ -1,3 +1,8 @@
+---
+mode: 'agent'
+description: 'Generate comprehensive copilot instructions for the repository'
+---
+
 Your task is to "onboard" this repository to a coding agent by adding a .github/copilot-instructions.md file. It should contain information describing how the agent, seeing the repo for the first time, can work most efficiently.
 
 
