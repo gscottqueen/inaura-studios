@@ -75,14 +75,15 @@ src/
 - `npm run lint` - Run ESLint
 
 ### Coding Standards
-- Use **TypeScript** for all new files
-- Follow **Next.js App Router** patterns
-- Use **functional components** with hooks
+- Always use **TypeScript** for all new files
+- Always follow **Next.js App Router** patterns
+- Always use **functional components** with hooks
 - Implement **comprehensive tests** for new components and utilities
-- Maintain **80% test coverage** threshold
+- Always maintain **80% test coverage** threshold
 - Always use type hints in any language which supports them
 - Always follow good security practices
-- Follow RESTful API design principles
+- Always follow RESTful API design principles
+- Always ensure `npm run lint` and `npm run test` pass before committing
 
 ### Component Development
 - Place reusable UI components in `src/components/ui/` following Shadcn/ui patterns
