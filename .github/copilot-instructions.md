@@ -4,6 +4,9 @@
 
 **Inaura Studios** is a Next.js application showcasing "Advanced visualizations for a more engaged world." This is a modern web application built with Next.js 15 and React 19, featuring a portfolio-style website with multiple sections: Studio, Lab, Future Good, and Publications.
 
+## Critical
+- Always be extremely concise. Never overcomplicate when simplicity will do.
+
 ## Tech Stack
 
 ### Core Framework
